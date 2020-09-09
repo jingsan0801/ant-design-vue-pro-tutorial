@@ -260,6 +260,21 @@ export const asyncRouterMap = [
             ]
           }
         ]
+      },
+      // demo
+      {
+        path: '/demo/demoPage',
+        name: 'newRouter',
+        redirect: '/demo/demoPage',
+        component: RouteView,
+        meta: { title: 'demo', keepAlive: true },
+        children: [
+          {
+            path: '/demo/demoPage',
+            name: 'ahaha',
+            meta: { title: 'demoPage', keepAlive: false }
+          }
+        ]
       }
 
       // other
